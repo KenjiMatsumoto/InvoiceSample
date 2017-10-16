@@ -20,7 +20,7 @@
 			</c:forEach>
 		</ul>
 	</c:if>
-	<form method="POST" action="InvoiceController">
+	<form method="POST" action="NewAction">
         請求書ID : <input type="text" readonly="readonly" name="invoiceId" value="" /> 
         <br /> 
         タイトル : <input type="text" name="title" value="" />
@@ -42,6 +42,6 @@
  --%>
 	</form>
 
-	<a href="InvoiceController?action=list">一覧へ戻る</a>
+	<a href="ListAction">一覧へ戻る</a>
 </body>
 </html>

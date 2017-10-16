@@ -21,7 +21,7 @@
 			</c:forEach>
 		</ul>
 	</c:if>
-	<form method="POST" action='InvoiceController' name="frmAddInvoice">
+	<form method="POST" action='EditAction' name="frmAddInvoice">
 		請求書ID : <input type="text" readonly="readonly" name="invoiceId" value="<c:out value="${invoice.invoiceId}" />" /> <br /> 
 		タイトル : <input type="text" name="title" value="<c:out value="${invoice.title}" />" /><br /> 
 		詳細 : <input type="text" name="detail" value="<c:out value="${invoice.detail}" />" /> <br /> 
@@ -29,6 +29,6 @@
 		<input type="submit" value="更新" /> <input type="hidden" name="token" value="<%=session.getAttribute("token")%>">
 	</form>
 	<input type="hidden" name="token" value="<%=session.getAttribute("token")%>">
-	<a href="InvoiceController?action=list">一覧へ戻る</a> 
+	<a href="ListAction">一覧へ戻る</a> 
 </body>
 </html>

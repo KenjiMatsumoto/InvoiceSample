@@ -7,7 +7,6 @@
 <title>請求書アプリ</title>
 </head>
 <body>
-	welcaom hello world
-	<jsp:forward page="/InvoiceController?action=list" />
+	<jsp:forward page="ListAction" />
 </body>
 </html>

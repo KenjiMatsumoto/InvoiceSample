@@ -14,7 +14,7 @@
 	%>
 	<h1>詳細</h1>
 	<p>
-		<a href="InvoiceController?action=list">一覧へ</a>
+		<a href="ListAction">一覧へ</a>
 	</p>
 	<div>
 		<table border=1>

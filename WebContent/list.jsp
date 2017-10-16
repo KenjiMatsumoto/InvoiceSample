@@ -11,8 +11,8 @@
 <body>
 	<h1>請求書アプリ</h1>
 	<div>
-		<a href="InvoiceController?action=list">一覧</a> 
-		<a href="InvoiceController?action=insert">請求書追加</a>
+		<a href="ListAction">一覧</a> 
+		<a href="NewAction">請求書追加</a>
 	</div>
 	<table border=1>
 		<thead>
@@ -35,11 +35,11 @@
                             value="${invoice.updateDate}" /></td>
                     <td><c:out value="${invoice.totalFee}" /></td>
                     <td><a
-                        href="InvoiceController?action=detail&invoiceId=<c:out value="${invoice.invoiceId}"/>">詳細</a></td>
+                        href="DetailAction?invoiceId=<c:out value="${invoice.invoiceId}"/>">詳細</a></td>
                     <td><a
-                        href="InvoiceController?action=edit&invoiceId=<c:out value="${invoice.invoiceId}"/>">更新</a></td>
+                        href="EditAction?invoiceId=<c:out value="${invoice.invoiceId}"/>">更新</a></td>
                     <td><a
-                        href="InvoiceController?action=delete&invoiceId=<c:out value="${invoice.invoiceId}"/>">削除</a></td>
+                        href="DeleteAction?invoiceId=<c:out value="${invoice.invoiceId}"/>">削除</a></td>
                 </tr>
             </c:forEach>
         </tbody>
